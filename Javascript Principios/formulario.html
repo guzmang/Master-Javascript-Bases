@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio DOM, Eventos y Funciones</title>
+		<script type="text/javascript" src="js/32-ejercicio-dom.js"></script>
+		<style type="text/css">
+			.box {
+				width: 200px;
+				height: 250px;
+				float: left;
+				margin: 20px;
+			}
+			.dashed {
+				border: 3px dashed black;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			1. Formulario con los campos: Nombre, Apellidos y Edad.
+			2. Boton de enviar el formulario: evento submit.
+			3. Mostrar datos por pantalla.
+			4. Validacion de formulario.
+		-->
+		<h1>Ejercicio DOM, Eventos y Funciones - Curso JS victorroblesweb.es</h1>
+		<div class="box">
+			<!-- Con el onsubmit evito que se redirija a otra pagina -->
+			<form action="#" method="POST" id="formulario" onsubmit="return false;">
+				<label for="nombre">Nombre: </label><br>
+				<input type="text" name="nombre" id="nombre"/><br>
+				<span id="errorNombre"></span>
+
+				<label for="apellidos">Apellidos: </label><br>
+				<input type="text" name="apellidos" id="apellidos"/><br>
+				<span id="errorApellidos"></span>
+
+				<label for="edad">Edad: </label><br>
+				<input type="number" name="edad" id="edad"/><br>
+				<span id="errorEdad"></span>
+				
+				<input type="submit" value="Enviar" id="submit"/>
+			</form>
+		</div>
+		<div class="box dashed">
+			<h3>Informacion del usuario</h3>
+			<hr>
+			<p id="pNombre">
+				Nombre: <span></span>
+			</p>
+			<p id="pApellidos">
+				Apellidos: <span></span>
+			</p>
+			<p id="pEdad">
+				Edad: <span></span>
+			</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Aprendiendo jQuery</title>
+
+ 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+ 		<script type="text/javascript" src="js/02-eventos.js"></script>
+ 		<style type="text/css">
+ 			#caja {
+ 				width: 250px;
+ 				height: 250px;
+ 				border: 2px solid black;
+ 				background: yellow;
+ 				transition: 300ms all;	/*Lo que tarda en cambiar de color, abajo solo seria al volverse rojo*/
+ 			}
+
+ 			input {
+ 				padding: 10px;
+ 				width: 300px;
+ 				font-size: 20px;
+ 			}
+
+ 			#datos {
+ 				border: 4px dashed black;
+ 				padding: 10px;
+ 				width: 250px;
+ 				height: 50px;
+ 				margin-top: 10px;
+ 				display: none;
+ 			}
+
+ 			#sigueme {
+ 				width: 25px;
+ 				height: 25px;
+ 				/* para poder mover el elemento libremente sin que interfiera entre ninguno de los otros elementos de la web*/
+ 				position: absolute;
+ 				display: block;
+ 				background: yellow;
+ 				opacity: 0.5;
+ 				border: 3px solid black;
+ 				border-radius: 999px;
+ 			}
+
+			/*Cuando paso por encima se vuelve rojo y vuelve al color anterior cuando salgo*/
+			/*
+ 			#caja:hover {
+ 				background: red;
+ 				cursor: pointer;
+ 			}
+ 			*/
+ 		</style>
+	</head>
+	<body>
+		<h1>Aprendiendo jQuery con Victor Robles WEB - Eventos</h1>
+
+		<div id="sigueme"></div>
+
+		<form>
+			<input type="text" id="nombre">
+		</form>
+
+		<div id="datos"></div>
+
+		<br>
+
+		<div id="caja">
+			Soy una caja
+		</div>
+
+	</body>
+</html>
